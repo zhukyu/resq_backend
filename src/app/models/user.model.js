@@ -50,7 +50,7 @@ module.exports = (sequelize, type) => {
             paranoid: true,
             underscored: true,
             defaultScope: {
-                attributes: { exclude: ['password'] }
+                attributes: { exclude: ['password', 'refreshToken'] }
             },
             scopes: {
                 withPassword: {
